@@ -16,11 +16,12 @@ const App = () => {
     return data.filter((item) => item.name.toLowerCase().includes(query));
   };
 
-  const filter = (button) => {
-    const filteredData = data
-      .filter((item) => item.appearance.gender === button)
-      .map((item) => item.appearance.gender);
-    setnewData(filteredData);
+  const menuItems = [...new Set(data.map((Val) => Val.appearance.gender))];
+  const filterItem = (curcat) => {
+    const newItem = data.filter((newVal) => {
+      return newVal.appearance.gender === curcat;
+    });
+    setnewData(newItem);
   };
 
   return (
@@ -37,7 +38,12 @@ const App = () => {
         />
         {/* <Profile/> */}
       </div>
-      <Filter filter={newData} />
+      <Filter
+        menuItems={menuItems}
+        setNewData={setnewData}
+        newData={data}
+        filterItem={filterItem}
+      />
       <Profile newData={search(newData)} />
     </div>
   );

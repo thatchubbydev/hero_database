@@ -7,9 +7,11 @@ const Profile = ({newData}) => {
                       <p>{item.biography.firstAppearance}</p>
                       <img src={item.images.lg} className='h-20 w-20 rounded-full p-3 ' alt='test' />
                       <div className='pl-20 pt-2 flex-col'>
-                          <h1>name: {item.name}</h1>
-                          <p>powerstat: {item.powerstats.intelligence} </p>
-                          <p>gender: {item.appearance.gender} </p>
+                          <h1>Name: {item.name}</h1>
+                          <p>Strength: {item.powerstats.intelligence} </p>
+                          <p>Gender: {item.appearance.gender} </p>
+                          <p>Specie: {item.appearance.race} </p>
+                          <p>Eye Color: {item.appearance.eyeColor} </p>
                       </div>
                   </div>
                   </div>))
