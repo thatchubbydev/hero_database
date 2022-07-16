@@ -6,7 +6,7 @@ This project was created using React JS and tailwind CSS
 
 React JS, Tailwind CSS, axios
 
-### `Challenges and approach to solution`
+### Challenges and approach to solution
 
 This app has 4 components
 
