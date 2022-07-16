@@ -1,6 +1,7 @@
 # superhero database
 
-This is a web app that displays any superhero of your choice...or at least is available in my fetched API data lol
+This is a web app that displays any superhero of your choice...
+rather just the ones available in my fetched API data lol
 
 ## technologies
 
