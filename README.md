@@ -1,6 +1,6 @@
 # superhero database
 
-This project was created using React JS and tailwind CSS
+This is a web app that displays any superhero of your choice...or at least is available in my fetched API data lol
 
 ## technologies
 
