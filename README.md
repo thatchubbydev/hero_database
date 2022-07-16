@@ -1,61 +1,36 @@
-# Getting Started with Create React App
+# superhero database
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using React JS and tailwind CSS
 
-## Available Scripts
+## technologies
 
-In the project directory, you can run:
+React JS, Tailwind CSS, axios
 
-### `npm start`
+### `Challenges and approach to solution`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app has 4 components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`UseFetch()`
+This is where i made my API call using axios to fetch the data, which i then stored within a state and passed into my App component
 
-### `npm test`
+`App()`
+This was where i displayed my other components, the Profile() and the Filter().
+In this component, I created two state hooks, one for storing my API data and the other for my search bar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`Profile()`
+This was my UI component, here i displayed the rendered data from the API and mapped through the array
+to display the necessary information for my characters.
 
-### `npm run build`
+`Filter()`
+This was where i had my filter buttons, but was unable to get them functioning
+I attempted to make a new array that would contain only the values of the gender category and display them using a map method.
+Then use the spread operator so that every value i got by displaying the array would display all the categories as buttons
+Afterwards i added a filter inside the butons to display the gender depending on the category.
+But was unable to get the function working
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I deployed the project to gh-pages: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
 
