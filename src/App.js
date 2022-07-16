@@ -26,13 +26,13 @@ const App = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-5xl text-center text-white m-8">
+      <h1 className="font-bold text-5xl text-center text-white m-8">
         SUPERHERO DATABASE
       </h1>
-      <div className="flex justify-center m-10">
+      <div className="flex justify-center mx-20 m-10">
         <input
           type="text"
-          className="p-2 border-black shadow-lg shadow-indigo-500/40 w-1/4 rounded-full text-center md:text-2xl sm:text-xs"
+          className="p-2 flex-auto w-16 border-black shadow-lg  shadow-indigo-500/40 rounded-xl text-center md:text-2xl sm:text-sm xs:text-xs"
           placeholder="Enter hero name"
           onChange={(e) => setQuery(e.target.value)}
         />
